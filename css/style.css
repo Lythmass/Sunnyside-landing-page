@@ -1,0 +1,44 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+}
+
+/* General Fonts */
+h1, h2, h3, h5 {
+     font-family: 'Fraunces', serif;
+}
+h1, .about h2 {
+     font-weight: 900;
+}
+
+h1 {
+     text-transform: uppercase;
+     letter-spacing: 0.5rem;
+     font-size: 3.25rem;
+}
+
+li, p, h6 {
+     font-family: 'Barlow', sans-serif;
+     line-height: 1.5;
+}
+
+li {
+     list-style: none;
+}
+
+.about h2 {
+     font-size: 2rem;
+}
+
+h5 {
+     text-transform: uppercase;
+}
+
+h6 {
+     font-size: 0.75rem;
+}
+/* End of General Fonts */
