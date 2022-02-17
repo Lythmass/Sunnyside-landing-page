@@ -1,5 +1,6 @@
 * {
      box-sizing: border-box;
+     font-size: 18px;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 }
 
 /* General Fonts */
-h1, h2, h3, h5 {
+h1, h2, h3, h5, .contact {
      font-family: 'Fraunces', serif;
 }
 h1, .about h2 {
@@ -18,7 +19,9 @@ h1, .about h2 {
 h1 {
      text-transform: uppercase;
      letter-spacing: 0.5rem;
-     font-size: 3.25rem;
+     font-size: min(10vw, 4.2rem);
+     color: white;
+     padding: 2.25rem 0 1.8rem;
 }
 
 li, p, h6 {
@@ -28,6 +31,8 @@ li, p, h6 {
 
 li {
      list-style: none;
+     padding: 1rem 0;
+     color: hsl(232, 10%, 55%);
 }
 
 .about h2 {
@@ -42,3 +47,65 @@ h6 {
      font-size: 0.75rem;
 }
 /* End of General Fonts */
+
+
+/* Header Styling */
+header {
+     background-image: url("../images/mobile/image-header.jpg");
+     background-size: 100vw;
+     height: 140vw;
+     background-repeat: no-repeat;
+     text-align: center;
+}
+
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     padding: 1.25rem 1.25rem;
+
+}
+
+.navbar ul {
+     padding: 0; margin: 0;
+     position: fixed;
+     z-index: 100;
+     top: 10%;
+     right: 50%;
+     transform: translateX(50%);
+     display: none;
+     background-color: white;
+     width: 90vw;
+}
+
+.navbar ul::after {
+     content: "";
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 0 0 33px 33px;
+     position: absolute;
+     top: -8%; right: 0;
+     border-color: transparent transparent white transparent;
+}
+
+.contact {
+     color: black;
+     text-transform: uppercase;
+     background-color: hsl(51, 100%, 49%);
+     display: inline-block;
+     border-radius: 3rem;
+     padding: 1rem 2rem;
+     margin: 1rem 0 2.5rem;
+}
+
+.first-li {
+     margin-top: 1rem;
+}
+
+#check {
+     display: none;
+}
+
+#check:checked ~ nav ul {
+     display: block;
+}
