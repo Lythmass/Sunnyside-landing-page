@@ -41,6 +41,27 @@ li {
 
 h5 {
      text-transform: uppercase;
+     color: hsl(212, 27%, 19%);
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+}
+h5::before {
+     content: "";
+     width: 105%;
+     height: 40%;
+     position: absolute;
+     bottom: 0;
+     left: -2.5%;
+     z-index: -1;
+     border-radius: 5rem;
+}
+.transform h5:before {
+     background-color: hsl(51, 100%, 49%, 0.3);
+}
+
+.stand-out h5:before {
+     background-color: hsl(7, 99%, 70%, 0.3);
 }
 
 h6 {
@@ -167,4 +188,59 @@ header {
      label {
           display: none;
      }
+}
+/* End of Header Styles */
+
+
+/* About Section */
+.aboutdiv {
+     display: flex;
+     width: 100vw;
+     flex-direction: column;
+     text-align: center;
+}
+.aboutdiv div:not(.graphic, .photography) {
+     flex-basis: 100%;
+     flex-grow: 1;
+     padding: 1rem;
+}
+.aboutdiv div p:not(.graphic p, .photography p) {
+     color: hsl(232, 10%, 55%);
+}
+
+.graphic {
+     background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+.photography {
+     background-image: url("../images/mobile/image-photography.jpg");
+}
+
+.graphic, .photography {
+     background-size: 100vw;
+     background-repeat: no-repeat;
+     height: 150vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+}
+.graphic h3{
+     color: hsl(167, 40%, 24%);
+     font-size: 1.75rem;
+     margin: 0;
+}
+
+.graphic p {
+     padding: 5%;
+     color: hsl(167, 40%, 24%);
+}
+
+.photography h3{
+     color: hsl(198, 62%, 26%);
+     font-size: 1.75rem;
+     margin: 0;
+}
+
+.photography p {
+     padding: 5%;
+     color: hsl(198, 62%, 26%);
 }
