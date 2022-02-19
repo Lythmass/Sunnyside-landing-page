@@ -75,6 +75,7 @@ header {
      display: none;
      background-color: white;
      width: 90vw;
+     flex-direction: column;
 }
 
 .navbar ul::after {
@@ -94,8 +95,8 @@ header {
      background-color: hsl(51, 100%, 49%);
      display: inline-block;
      border-radius: 3rem;
-     padding: 1rem 2rem;
-     margin: 1rem 0 2.5rem;
+     margin: 1rem auto 2.5rem;
+     width: 9rem;
 }
 
 .first-li {
@@ -107,5 +108,63 @@ header {
 }
 
 #check:checked ~ nav ul {
-     display: block;
+     display: flex;
+
+}
+
+/* Header for Desktop */
+@media(min-width: 871px) {
+     header {
+          background-image: url("../images/desktop/image-header.jpg");
+     }
+
+     .arrow {
+          position: absolute;
+          left: 50%;
+          top: 35%;
+          transform: translateX(-50%);
+     }
+
+     .logo {
+          margin: 1.1rem 0.7rem;
+     }
+     /* Navigation Bar */
+
+     .navbar ul {
+          background-color: transparent;
+          display: flex;
+          flex-direction: row;
+          top: 0;
+          transform: translateX(0);
+          justify-content: flex-end;
+          right: 0;
+     }
+     .navbar ul li:not(.contact) {
+          padding: 2.15rem 1.7rem;
+          margin: 0;
+          color: white;
+          cursor: pointer;
+          transition: 0.2s ease;
+     }
+     .navbar ul li:not(.contact):hover {
+          color: black;
+     }
+     .navbar ul::after {
+          display: none;
+     }
+     .contact {
+          margin: 1.25rem;
+          padding: 0.9rem 0;
+          width: 9rem;
+          cursor: pointer;
+          background-color: hsl(0, 0%, 100%);
+          transition: 0.2s ease;
+     }
+     .contact:hover {
+          color: white;
+          background-color: hsl(0, 0%, 100%, 0.25);
+     }
+     label {
+          display: none;
+     }
 }
