@@ -23,7 +23,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Links
-- Live Site URL: [Add live site URL here](https://lythmass.github.io/Sunnyside-landing-page/)
+- Live Site URL: (https://lythmass.github.io/Sunnyside-landing-page/)
 
 ## My process
 
