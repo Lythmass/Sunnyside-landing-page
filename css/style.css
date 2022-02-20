@@ -55,12 +55,13 @@ h5::before {
      left: -2.5%;
      z-index: -1;
      border-radius: 5rem;
+     transition: 0.2s ease;
 }
-.transform h5:before {
+.transform h5::before {
      background-color: hsl(51, 100%, 49%, 0.3);
 }
 
-.stand-out h5:before {
+.stand-out h5::before {
      background-color: hsl(7, 99%, 70%, 0.3);
 }
 
@@ -92,7 +93,7 @@ header {
      z-index: 100;
      top: 10%;
      right: 50%;
-     transform: translateX(50%);
+     transform: translateX(50%) translateY(10%);
      display: none;
      background-color: white;
      width: 90vw;
@@ -137,12 +138,13 @@ header {
 @media(min-width: 871px) {
      header {
           background-image: url("../images/desktop/image-header.jpg");
+          height: 55vw;
      }
 
      .arrow {
           position: absolute;
           left: 50%;
-          top: 35%;
+          top: 20rem;
           transform: translateX(-50%);
      }
 
@@ -159,6 +161,7 @@ header {
           transform: translateX(0);
           justify-content: flex-end;
           right: 0;
+          position: absolute;
      }
      .navbar ul li:not(.contact) {
           padding: 2.15rem 1.7rem;
@@ -243,4 +246,66 @@ header {
 .photography p {
      padding: 5%;
      color: hsl(198, 62%, 26%);
+}
+
+/* About Section for Desktop */
+@media (min-width:871px) {
+     .aboutdiv {
+          flex-flow: row wrap;
+          align-items: center;
+     }
+     .aboutdiv div:not(.graphic, .photography) {
+          flex-basis: 0;
+          padding: 0 11%;
+          text-align: left;
+     }
+     @media (max-width: 1040px) and (min-width: 872px) {
+          .aboutdiv div:not(.graphic, .photography) {
+               padding: 0 3%;
+          }
+     }
+     .aboutdiv img {
+          width: 50%;
+     }
+     .transform {
+          transform: translateX(-100%);
+
+     }
+     .first-img {
+          transform: translateX(100%);
+     }
+     .transform h5:hover::before {
+          background-color: hsl(51, 100%, 49%, 1);
+     }
+
+     .stand-out h5:hover::before {
+          background-color: hsl(7, 99%, 70%, 1);
+     }
+     .graphic {
+          background-image: url("../images/desktop/image-graphic-design.jpg");
+     }
+     .photography {
+          background-image: url("../images/desktop/image-photography.jpg");
+     }
+     .graphic, .photography {
+          width: 50%;
+          background-size: 100%;
+          height: 40vw;
+          padding: 0 10%;
+     }
+     @media (max-width: 1370px) and (min-width: 1040px) {
+          .graphic, .photography {
+               height: 42vw;
+          }
+          .graphic {
+               padding: 0 7%;
+          }
+     }
+     @media (max-width: 1040px) and (min-width: 872px) {
+          .graphic, .photography {
+               padding: 0;
+               height: 45vw;
+          }
+     }
+
 }
