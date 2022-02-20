@@ -309,3 +309,39 @@ header {
      }
 
 }
+/* End of About Section */
+
+/* Testimonials Section */
+.testimonials {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+.testimonials h2 {
+     text-transform: uppercase;
+     letter-spacing: 0.25rem;
+     color: hsl(210, 4%, 67%);
+     margin: 4rem 0 1.6rem;
+}
+.testimonials h3 {
+     color: hsl(212, 27%, 19%);
+     margin-bottom: 0.5rem;
+     font-weight: 900;
+}
+.testimonials h6 {
+     margin: 0 0 2rem;
+     color: hsl(210, 4%, 67%);
+
+}
+.testimonials img {
+     border-radius: 50%;
+     width: 4.5rem;
+}
+.testimonials p {
+     color: hsl(213, 9%, 39%);
+}
+
+
+.testimonials div {
+     padding: 1rem;
+}
