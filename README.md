@@ -23,15 +23,13 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://lythmass.github.io/Sunnyside-landing-page/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
@@ -46,5 +44,5 @@ The experience and knowledge that I got from this project is very useful, now I 
 The important parts of responsiveness is using min, max, clamp functions and I am not really comfortable with these functions, which is something I need to work on.
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Lythmass)
-- GitHub - [@yourusername](https://github.com/Lythmass)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/Lythmass)
+- GitHub - (https://github.com/Lythmass)
