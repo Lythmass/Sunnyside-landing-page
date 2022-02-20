@@ -387,6 +387,9 @@ footer {
      width: 100vw;
 }
 
+.footer-logo {
+     margin: 1.75rem 0 0;
+}
 
 footer ul {
      padding: 1rem 0 0;
@@ -396,6 +399,8 @@ footer ul {
 footer li {
      color: hsl(168, 34%, 41%);
      padding: 0 5.5vw;
+     transition: 0.2s ease;
+     cursor: pointer;
 }
 
 .icons {
@@ -403,4 +408,26 @@ footer li {
 }
 .icons svg {
      margin: 0 3vw;
+     transition: 0.2s ease;
+     cursor: pointer;
+}
+
+footer li:hover{
+     color: white;
+}
+.icons svg:hover {
+     filter: brightness(0) invert(1);
+}
+
+/* Footer Section for Desktop Size */
+@media (min-width: 871px) {
+     footer {
+          min-height: 20vw;
+     }
+     footer li {
+          padding: 0 2vw;
+     }
+     .icons svg {
+          margin: 0 1vw;
+     }
 }
