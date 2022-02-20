@@ -91,9 +91,9 @@ header {
      padding: 0; margin: 0;
      position: fixed;
      z-index: 100;
-     top: 10%;
+     top: 5rem;
      right: 50%;
-     transform: translateX(50%) translateY(10%);
+     transform: translateX(50%);
      display: none;
      background-color: white;
      width: 90vw;
@@ -372,4 +372,35 @@ header {
      .images img {
           width: 25%;
      }
+}
+/* End of images Section */
+
+/* Footer Section */
+footer {
+     background-color: hsl(167, 44%, 70%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     min-height: 90vw;
+     width: 100vw;
+}
+
+
+footer ul {
+     padding: 1rem 0 0;
+     display: flex;
+}
+
+footer li {
+     color: hsl(168, 34%, 41%);
+     padding: 0 5.5vw;
+}
+
+.icons {
+     padding: 3rem 0 1.5rem;
+}
+.icons svg {
+     margin: 0 3vw;
 }
