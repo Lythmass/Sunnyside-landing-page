@@ -331,7 +331,6 @@ header {
 .testimonials h6 {
      margin: 0 0 2rem;
      color: hsl(210, 4%, 67%);
-
 }
 .testimonials img {
      border-radius: 50%;
@@ -341,7 +340,21 @@ header {
      color: hsl(213, 9%, 39%);
 }
 
-
 .testimonials div {
      padding: 1rem;
+}
+
+/* Testimonials for Desktop Size */
+@media (min-width:871px) {
+     .testimonials .people {
+          display: flex;
+          flex-direction: row;
+          padding: 5% 11% 7%;
+     }
+     .testimonials h2 {
+          margin: 8rem 0 0;
+     }
+     .testimonials h3 {
+          margin-top: 5rem;
+     }
 }
