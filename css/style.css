@@ -198,7 +198,7 @@ header {
 /* About Section */
 .aboutdiv {
      display: flex;
-     width: 100vw;
+     width: 100%;
      flex-direction: column;
      text-align: center;
 }
@@ -356,5 +356,20 @@ header {
      }
      .testimonials h3 {
           margin-top: 5rem;
+     }
+}
+/* End of Testimonials Section */
+
+/* Images Section */
+.images {
+     display: flex;
+     flex-wrap: wrap;
+}
+.images img {
+     width: 50%;
+}
+@media (min-width: 871px) {
+     .images img {
+          width: 25%;
      }
 }
