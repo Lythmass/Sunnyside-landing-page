@@ -384,7 +384,7 @@ footer {
      justify-content: center;
      text-align: center;
      min-height: 90vw;
-     width: 100vw;
+     width: 100%;
 }
 
 .footer-logo {
